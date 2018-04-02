@@ -1,0 +1,1164 @@
+commit ec1b316f1e66b91a94e58e6ddf4c2cd97f570c88
+Merge: cdeb6fe ef916fe
+Author: AdamVD <avdonle@outlook.com>
+Date:   Mon Apr 2 01:41:12 2018 -0400
+
+    Merge branch 'undo-redo'
+    
+    # Conflicts:
+    #       reservations.txt
+
+commit ef916fefdf976297d254672ebf1e2b243c9c3f9f
+Author: AdamVD <avdonle@outlook.com>
+Date:   Mon Apr 2 01:36:32 2018 -0400
+
+    implement delete undo
+
+commit dc227f28a95202e5dbeb019e4e7e1334673b30c4
+Author: AdamVD <avdonle@outlook.com>
+Date:   Mon Apr 2 01:30:40 2018 -0400
+
+    Implement delete redo
+
+commit 7a4345f1a02721db7b5b88ab26938da9f602c092
+Author: AdamVD <avdonle@outlook.com>
+Date:   Mon Apr 2 01:12:59 2018 -0400
+
+    Implement reserve redo
+
+commit e3ffd520c5910c7f67243bd2d6bec3cd5e0b03c9
+Author: AdamVD <avdonle@outlook.com>
+Date:   Mon Apr 2 01:09:55 2018 -0400
+
+    Make undo manager only keep working commands
+
+commit 76b811128baff80b4aa93f56719a53d904e19d17
+Author: AdamVD <avdonle@outlook.com>
+Date:   Mon Apr 2 01:08:09 2018 -0400
+
+    Fix retrieve time output
+
+commit 9b102946e07eef6d736de1b72e1518109e2d61f1
+Author: AdamVD <avdonle@outlook.com>
+Date:   Mon Apr 2 01:07:29 2018 -0400
+
+    Implement reserve undo
+
+commit fa85723dbbad36458ee423bee45cd4588582111c
+Author: AdamVD <avdonle@outlook.com>
+Date:   Mon Apr 2 00:44:10 2018 -0400
+
+    Separate undo logic into private methods
+
+commit cdeb6fe51206ff523cc38f6fbaab74d82932de32
+Merge: 06f907c fa49bb9
+Author: Tom Amaral <heartemoji@users.noreply.github.com>
+Date:   Sun Apr 1 22:03:08 2018 -0400
+
+    Merge pull request #3 from BobbySwen262/r2-gui
+    
+    R2 gui
+
+commit 2d0316aa4c20f4eda444fe4679d77bd5be128a82
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Apr 1 21:52:10 2018 -0400
+
+    Implement Redo command
+
+commit 2b052bb91e95036f921d0848a95a9f42935e6091
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Apr 1 21:41:42 2018 -0400
+
+    Implement Undo command
+
+commit 145afb349054ce11deebfe12364cbc58000da483
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Apr 1 21:19:26 2018 -0400
+
+    Add UndoManager and Undo/Redo command
+
+commit fa49bb9259fc0a80f5645c0206b89dec4e353b17
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sun Apr 1 13:43:43 2018 -0700
+
+    fixed retrieve command output
+
+commit a597d4dc850eeeec1150c918b72b07ef8e644e4b
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Sun Apr 1 15:17:42 2018 -0400
+
+    Fixed the issue of not prepending client id to requests.
+
+commit aeee141f8a1f103a3cb8781820acf03a00ea6113
+Merge: c446c76 ef1405d
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Sun Apr 1 15:13:04 2018 -0400
+
+    Fixed the issue of not prepending client id to requests.
+
+commit 2db218dd28e543cb6a08b7757a06a094894a1d7e
+Merge: b3a2f1c ef1405d
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Apr 1 15:10:34 2018 -0400
+
+    Merge branch 'multi-client' into undo-redo
+    
+    # Conflicts:
+    #       src/control/request_response/commands/Reserve.java
+
+commit ef1405dab56764ccfb9c3b96ac793215399640c8
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Apr 1 14:54:10 2018 -0400
+
+    Integrate FAA additon with CID observer system
+
+commit 914e993fcf62aa8a0a0e456cc96aa45145fe23eb
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Apr 1 13:57:55 2018 -0400
+
+    Fix merge issues
+    
+    Now buildable
+
+commit 1d8ada428fdee12f7bc4ca995d9ccd28a06ff37e
+Merge: b584d2f 0ee89a2
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Apr 1 13:11:14 2018 -0400
+
+    Merge remote-tracking branch 'origin/FAA_API' into multi-client
+    
+    # Conflicts:
+    #       src/RunPTUI.java
+    #       src/control/request_response/commands/Airport.java
+    #       src/model/data_store/AirportStore.java
+    #       src/test/control/request_response/CommandFactoryTest.java
+    #       src/test/control/request_response/RequestHandlerTest.java
+    #       src/test/view/client/CLIClientTest.java
+
+commit b584d2f87faf517f57b76253d568e8286c893755
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Apr 1 12:49:24 2018 -0400
+
+    Fix null pointer from reservation retrieval
+    
+    Retrieve was throwing nulls when the passenger is not tracked by the Map. The return doc string specifies it should return an empty list.
+
+commit 2f86b4f37f7666015d1f81a5d8a97b87e9d5a610
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Apr 1 12:43:01 2018 -0400
+
+    Delete unused test launch point
+
+commit 0ee89a26d43a67f853205a9e788d0d333fa1a380
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sun Apr 1 08:47:44 2018 -0700
+
+    airport and server commands talk to serverStore to either set/get clients server
+
+commit e618d5e516792444943730c7a8b4fa38bc027648
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sun Apr 1 08:46:26 2018 -0700
+
+    added server store, stores client id to current server
+
+commit 69aac527c8eae35ec99c2238595e78c32233e1cd
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Apr 1 01:41:15 2018 -0400
+
+    Modify airport to support multiple clients
+
+commit 73dc0aea47b72f3db457749bcea10bf65099aa36
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Apr 1 01:02:15 2018 -0400
+
+    Prepend CID to output of all commands
+
+commit 2567f79dc8679b63f2aa4e6d562078ea017d1be4
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Apr 1 00:51:15 2018 -0400
+
+    Add disconnect functionality
+
+commit 6c16803272e67cdc2f7924433f7d63d0cdc694aa
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Apr 1 00:39:56 2018 -0400
+
+    Fix connection request response
+
+commit ff45a25f7508bec6546830dd7d30c1c44afb1bef
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Apr 1 00:36:46 2018 -0400
+
+    Simplify some request splitting logic in request hanlder
+
+commit c33312bd8c5f2aa7d2c15d96fe26ebd7cc9f6a4f
+Merge: 3e22902 4fe6343
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sat Mar 31 18:43:10 2018 -0700
+
+    Merge remote-tracking branch 'origin/FAA_API' into FAA_API
+
+commit 3e22902ecd02ed1b3c5939a343967ce556c21e05
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sat Mar 31 18:42:57 2018 -0700
+
+    changed airport output string for faa api
+
+commit c446c76c821c5c7eb9bbb270f44f3075193a555f
+Merge: 1bddf52 02ecdf6
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Sat Mar 31 19:18:10 2018 -0400
+
+    Fixed bug where clientId wasn't being parsed correctly from the connect reponse in ClientTab. Additionally, fixed an error in the front end where InfoQueryStore wasn't being instantiated.
+
+commit 4fe63435176ef040855fd5fa1a03c0c37f4b7bd8
+Author: Shawn Struble <shawnrstruble@gmail.com>
+Date:   Sat Mar 31 18:37:32 2018 -0400
+
+    fixed airport command bug with string output for local airports
+
+commit 1bddf52ee0db7ee4bfd02dada2486af1488c10e7
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sat Mar 31 13:59:49 2018 -0700
+
+    faa class can do airport delay lookups
+    changed interface getWeather return type to string
+
+commit 02ecdf63d9fbaef9990252d38f54176d757684ff
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sat Mar 31 16:48:50 2018 -0400
+
+    Modify InfoQueryStore to support multiple clients
+
+commit 6658f5df0a863470c0ac87d29003431e8670e222
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sat Mar 31 13:10:06 2018 -0700
+
+    added support to airport command for faa api lookups (not completed)
+
+commit 0d8b119380faa48f862a2d1319303258aaa66f3b
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sat Mar 31 13:09:28 2018 -0700
+
+    added json support to use faa api
+
+commit 029cbb184c2b1a1f7015b599d17202ecc06bc4f3
+Merge: 733800a 4dd523a
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Sat Mar 31 15:44:16 2018 -0400
+
+    Merge branch 'r2-gui' of https://github.com/BobbySwen262/designproject-strategic-slackers into FAA_API
+
+commit 733800ae6830b106ea15634f2c35052bb540e619
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Sat Mar 31 15:43:50 2018 -0400
+
+    Solved the JSON formatting dilemma! pasted test code into a poop class for now.
+
+commit e83043e454ec632f140dc4ee58e1a5dd327a9b01
+Merge: 3948773 246b3d9
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Sat Mar 31 15:37:43 2018 -0400
+
+    Merge branch 'FAA_API' of https://github.com/BobbySwen262/designproject-strategic-slackers into FAA_API
+
+commit ca5689a19824c915fe10542ed36202cd7a42fbb4
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sat Mar 31 15:22:43 2018 -0400
+
+    Modify command constructors to accept client ID
+    
+    Also modify command factory relection code to aqcuire the new constructor and pass the client ID.
+
+commit 031f24a81b90fbcb066e9353983e7bd034c7bfff
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sat Mar 31 15:06:54 2018 -0400
+
+    Remove unnecessary method
+
+commit 246b3d9ec68e079c7575c2fd634e48f4b1cf48b6
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sat Mar 31 11:25:46 2018 -0700
+
+    added enum for which server is being used,
+    created static setter for current server (accessed by server command)
+
+commit cb5fd53fd019ce06409b32d59e7f185b22433ef7
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sat Mar 31 11:24:52 2018 -0700
+
+    created change server command
+
+commit dfe3aaa9920c25a30d77ef6024e347fa3cdf768b
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sat Mar 31 11:24:35 2018 -0700
+
+    added server command to possible commands from command factory
+
+commit ccc2deedbe77757459c11f19cc9d4b79fe207d53
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sat Mar 31 11:24:03 2018 -0700
+
+    created faa singleton store for api calls
+
+commit c8c047759988bdac27a34672af978a888fc5841f
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sat Mar 31 11:22:26 2018 -0700
+
+    interface for different airport data stores
+
+commit 05e7e81165219cffd1fca4fc52dad7b29eef0700
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sat Mar 31 11:21:59 2018 -0700
+
+    airpotstore implements airdata interface
+
+commit 770df0c951c55e281369f0f5332182361b2fd755
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sat Mar 31 14:20:31 2018 -0400
+
+    Modify command factory to accept client ID
+
+commit 515c3b53c79936e6b7f5cd8eb31d033d0b69d66b
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sat Mar 31 14:16:56 2018 -0400
+
+    Modify request handler to handle multiple connected clients
+    
+    Currently can accept connection request.
+    Commands not yet modified to take in a CID.
+    Client cannot be disconnected yet.
+
+commit 2c8591291fb49ce4cb56034e9f75138dec92fe2f
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sat Mar 31 10:28:29 2018 -0400
+
+    Implement observer pattern subject functionality into ID manager
+
+commit c6190eb2e5995c0b208433ea10b0941866bbed4d
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sat Mar 31 10:05:28 2018 -0400
+
+    Implement and test ID manager
+    
+    Still needs methods from observer pattern.
+
+commit bc5dc9dce6e3d5971b69fd4be9094ceb6eca199e
+Author: AdamVD <avdonle@gmail.com>
+Date:   Fri Mar 30 23:05:59 2018 -0400
+
+    Add javadocs to subject inerface attach method
+
+commit 24f3ed95181dc1f18187884fec1d35af235f0c7e
+Author: AdamVD <avdonle@gmail.com>
+Date:   Fri Mar 30 22:34:13 2018 -0400
+
+    Add ID subject interface
+
+commit 3e5ef8565b3324e8777f5e3f371429f00d9dc64c
+Author: AdamVD <avdonle@gmail.com>
+Date:   Fri Mar 30 22:19:06 2018 -0400
+
+    Add ID observer interface
+
+commit 4dd523a7090ac54758f5f5ebd0ebcfa6cd7d0b6f
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Fri Mar 30 18:53:05 2018 -0400
+
+    Front end no longer generates clientId. Each client tab now sends a connect request upon instantiation and receives its client id from the response. Client tabs now send a disconnect request when the tab is closed.
+
+commit 3bdf3105b7c8973165d3209ccdf181fa4a470434
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Fri Mar 30 18:00:10 2018 -0400
+
+    Added some text to the main splash screen.
+
+commit b3a2f1cad77bbdf6bd83dccc96858c19c84223ea
+Author: AdamVD <avdonle@gmail.com>
+Date:   Fri Mar 30 17:42:29 2018 -0400
+
+    Refactor Reserve command with undoable (incomplete)
+
+commit 8a926fba90821fc7fcd15b8c7782451d2bbcec35
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Fri Mar 30 17:25:55 2018 -0400
+
+    Expanded main window size. Adjusted client tab components accordingly. The input field now recognizes the enter button to submit a request as well as the submit button.
+
+commit e3b8b91080b30c66b4188366b0ecf79d68a50772
+Author: AdamVD <avdonle@gmail.com>
+Date:   Fri Mar 30 17:13:44 2018 -0400
+
+    Add file header to undoable interface
+
+commit 0b938bcfba903be03e7cd4809e5eb48946a5c641
+Merge: 0cbec7a 06f907c
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Fri Mar 30 15:13:55 2018 -0400
+
+    Merge branches 'master' and 'r2-gui' of https://github.com/BobbySwen262/designproject-strategic-slackers into r2-gui
+
+commit a07a1178219871d31d8cad0389dd400ed1fd123e
+Author: AdamVD <avdonle@gmail.com>
+Date:   Fri Mar 30 11:06:41 2018 -0400
+
+    Add UndoableCommand interface
+
+commit 39487735bca60d9c80f4868994e5462f66123bf2
+Merge: 06f907c 0cbec7a
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Fri Mar 30 10:31:35 2018 -0400
+
+    Merge branches 'master' and 'r2-gui' of https://github.com/BobbySwen262/designproject-strategic-slackers into r2-gui
+
+commit 0cbec7a61bf764c6ba3dbe3d2fceaed471e9cab0
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Thu Mar 29 20:46:34 2018 -0400
+
+    Configured view tier to work off r1 code. Works without any known issue. Should be easy to convert to r2 specifications from here.
+
+commit 497e752b44feee6822f05827835c38a766f35db4
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Thu Mar 29 20:12:08 2018 -0400
+
+    Refactored FrontEnd to defer the layout setup to a new class called MainLayoutPane. HelpTab is now able to display a welcome screen with text that is unclosable by the user.
+
+commit 432c1f9ae71316aeb48a64437c0a206abddb69f0
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Thu Mar 29 16:12:56 2018 -0400
+
+    Renamed Client class to CLIClient for clarity. Added a HelpTab skeleton for a help page. Removed an extraneous group node from FrontEnd.
+
+commit f712f3a5f90d126ef10ca37e894d21487bc65410
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Wed Mar 28 19:19:54 2018 -0400
+
+    Added getRequestString method
+
+commit de20e38abacdadc7da51ddbb43d11374f5f103a4
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Wed Mar 28 19:09:01 2018 -0400
+
+    Cleaned up FrontEnd code
+
+commit 5aa0065285909b2e5a42b3304abca4838da01ed3
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Wed Mar 28 19:05:25 2018 -0400
+
+    Cleaned up code in ClientTab. No functionality change
+
+commit a8163091a91639a24da773970d0dce03ae24685e
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Wed Mar 28 18:38:31 2018 -0400
+
+    Output text area now displaying properly. All essential elements are present and positioning is more or less final.
+
+commit a81c63386239f40903605f96489f8327321af62c
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Wed Mar 28 18:06:17 2018 -0400
+
+    Position of Tab pane and New Client button set. Request input area and submit button in place and responsive.
+
+commit 88db2c4f89cbc894fb8a588b21518345cd4c6949
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Wed Mar 28 11:07:39 2018 -0400
+
+    Fixed Client Id tab not showing updated id number. Added ClientTab to provide an easier way of setting up each client tab.
+
+commit 06f907c0024a52cd4c405c2882531b49e6190970
+Author: Shawn Struble <shawnrstruble@gmail.com>
+Date:   Wed Mar 28 10:54:19 2018 -0400
+
+    removed unused methods
+
+commit cff75fc63ef69691fbad8e2bfecc9da873b7da82
+Author: Shawn Struble <shawnrstruble@gmail.com>
+Date:   Wed Mar 28 10:48:26 2018 -0400
+
+    fixed bug where you could fly out of destination and back in
+
+commit 6a611cac7b4aa1579261299f876219f27b329ec0
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Tue Mar 27 19:08:20 2018 -0700
+
+    Updated read/write functions. Updated delete && reserve
+    removed unnecessary import.
+
+commit c4589725f99f42ea6e0863cdc95c2041860a1c88
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Tue Mar 27 19:06:39 2018 -0700
+
+    Itinerary store finds itineraries in real time.
+    Old algorithm deleted.
+
+commit 66cf0ae640489c0fc80c44c2fbe4fef0733657c7
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Tue Mar 27 19:05:17 2018 -0700
+
+    changed constructor to private (singleton).
+    updated functions for getting list of flights by origin or destination
+
+commit 6cda95e2c4a9482782a41cc63c7af5cb7e7480f7
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Tue Mar 27 19:01:36 2018 -0700
+
+    removed unneeded import. removed hash function.
+
+commit 4f23c98c3e8e17b0b7980fb49650629be41627cc
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Tue Mar 27 19:00:09 2018 -0700
+
+    Fixed constructor ordering added private restriction to variables
+
+commit 235bf9788caae5b831d94f1dec3e367fd6ca6214
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Tue Mar 27 18:55:22 2018 -0700
+
+    Fixed itinerary output times for info command
+
+commit d2b607404512ff8cf855e792361734688301df38
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Tue Mar 27 08:41:14 2018 -0400
+
+    Initial upload of front end code. Bits and pieces.
+
+commit 543f24767aa43b6116fe8a9aa5b1fa74905366e9
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sat Mar 24 11:28:06 2018 -0700
+
+    updated the delete command - checks the origin/dest codes of the itineraries in the reservations
+
+commit 13be58ace989e0c4ad19a2fa790f164a697f5d8a
+Author: Shawn Struble <shawnrstruble@gmail.com>
+Date:   Sat Mar 24 13:04:09 2018 -0400
+
+    changed map from string to list of hashes to string to list of itineraries
+    updated reserve command
+    Erased old functionality from a retrieve helper method
+
+commit b663f27da7a5892b1854ca7fd72e6716c23599e1
+Author: Shawn Struble <shawnrstruble@gmail.com>
+Date:   Sat Mar 24 13:02:04 2018 -0400
+
+    removed mapHash function
+    created method that takes in list of flight numbers and returns itinerary
+
+commit 08cdd80ba6423a073b80ae49054082f867db14a9
+Author: Shawn Struble <shawnrstruble@gmail.com>
+Date:   Sat Mar 24 13:00:27 2018 -0400
+
+    changed fight list to map, mapping flight number to flight object
+    added method to get flight number from a flight
+    changed getAllFlights to return list of values from map
+
+commit dc1971e519806b991c9e4adc68a449606d30eb25
+Author: Shawn Struble <shawnrstruble@gmail.com>
+Date:   Sat Mar 24 12:55:05 2018 -0400
+
+    Added Command to get list of flight numbers from an itinerary
+
+commit 8f30bd9b8ddb6b92253c542231c2adb0cf8fef17
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Mar 18 12:08:40 2018 -0400
+
+    Implement Retrieve command
+
+commit db6b15aea8b1cf990fbb289e6ae13237bd040194
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Mar 18 00:22:27 2018 -0400
+
+    Fix duplicate reservation check
+    
+    From exact itinerary to same orig/dest per requirements.
+
+commit cfb7c2fed0ddd591540c20db72cb4f4344f06ce2
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Mar 18 00:07:43 2018 -0400
+
+    Implement Reserve command
+    
+    Only known issue is that only exact itinerary matches are flagged as duplicates, whereas a duplicate should be any with same origin and destination.
+
+commit f338b44ae1e5403368ff0b92bc3bf446cba3f84b
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sat Mar 17 23:41:48 2018 -0400
+
+    Add itinerary IDs to Info output
+
+commit 6fe0117a729d3031840b8b60f031f8851cb8656e
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sat Mar 17 16:16:04 2018 -0400
+
+    Remove unchecked exception catch
+
+commit 227159afe1b6cb4bd7fc5670e96234e46f1fcaf6
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sat Mar 17 16:13:16 2018 -0400
+
+    Create class for coordination between Info and Reserve commands
+
+commit 0c179d5c61ec8d80986a883b319eb2c3af8a60f0
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sat Mar 17 15:03:01 2018 -0400
+
+    Fix file name in headers
+    
+    Copy paste...
+
+commit 31d2a0b00bde5def9413773209c53c2ef79ac5e5
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sat Mar 17 15:00:14 2018 -0400
+
+    Add file headers where missing in request-response
+
+commit e5bebaafa894480eeef35031d2590c233ae00f4f
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sat Mar 17 14:26:13 2018 -0400
+
+    Complete delete command
+    
+    Required edits to the reservation store to remove a reservation based on origin and destination airport codes.
+
+commit 7bfa5da73d732efa70166014b06b0fe57c7ba5c2
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sat Mar 17 10:28:03 2018 -0400
+
+    Remove "finished" print from flight store
+    
+    We don't want any stray prints making it onto the PTUI.
+
+commit 26a5923d80955528668f976b92b778185986ec0c
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sat Mar 17 10:19:51 2018 -0400
+
+    Refactor airport store to adhere to law of demeter
+    
+    Added getters for airport details within the airport store. This removes any dependancy from the request-response subsystem to airport.
+
+commit 37a2e08bd9f75727ac5f34139cbc827a4f9a90d9
+Author: AdamVD <avdonle@gmail.com>
+Date:   Fri Mar 16 13:28:55 2018 -0400
+
+    Add origin and dest checks to info command parse
+
+commit 983daff5366c6f52c943f591e709d650c9da38b6
+Author: AdamVD <avdonle@gmail.com>
+Date:   Fri Mar 16 13:00:36 2018 -0400
+
+    Add date output formatting to info command
+
+commit 096dae29aa5011a410caad2b87b5d7b9373f7a16
+Author: AdamVD <avdonle@gmail.com>
+Date:   Fri Mar 16 12:22:21 2018 -0400
+
+    Implement trip component comparitors
+
+commit 00a4b78f69a18f3babe3c4fcc845347393f44c3c
+Author: AdamVD <avdonle@outlook.com>
+Date:   Mon Mar 5 00:09:16 2018 -0500
+
+    Exclude jar build manifest
+
+commit cf5b9f8aabce2596b94b257a375a1e05d1eef20e
+Author: AdamVD <avdonle@outlook.com>
+Date:   Sun Mar 4 23:46:09 2018 -0500
+
+    Create PTUI entry-point
+
+commit 85b25230fa80360eb7ee8a365d96b6e4312351bd
+Merge: 39a2ce0 3e7aa62
+Author: AdamVD <avdonle@outlook.com>
+Date:   Sun Mar 4 23:13:45 2018 -0500
+
+    Merge branch 'master' into request_response
+    
+    # Conflicts:
+    #       src/model/components/Itinerary.java
+    #       src/model/data_store/ItineraryStore.java
+
+commit 39a2ce077ff73b43140d723ace95bd1e83149abc
+Author: AdamVD <avdonle@outlook.com>
+Date:   Sun Mar 4 23:10:01 2018 -0500
+
+    Fix itinerary store and info getArrival
+
+commit 3e7aa62d357a2d041708202345539e12e367cf6d
+Author: Shawn Struble <shawnrstruble@gmail.com>
+Date:   Sun Mar 4 22:06:50 2018 -0500
+
+    changed access scope on some commands
+
+commit a0d914b603751fd687875ffc6cdbaf0aa6d58c4f
+Author: meetpatel <msp2248@g.rit.edu>
+Date:   Sun Mar 4 21:21:49 2018 -0500
+
+    Docstrings added to components
+
+commit c4e1b122df24f463d0874a9150215602895600dc
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Mar 4 20:39:47 2018 -0500
+
+    Update client tester
+
+commit 015772a70dcc359915e5c519ef6a859200533d41
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Mar 4 20:35:01 2018 -0500
+
+    Uncomment info and fix Itinerary store
+
+commit ddc489877de82bed77fe6870fd0f2e4487e40a2c
+Merge: 92504a1 69337b8
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Mar 4 20:32:41 2018 -0500
+
+    Merge branch 'master' into request_response
+
+commit 92504a161c8f7b1e37742bde625456128f2b49c1
+Merge: 241b441 8ac7386
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Mar 4 20:30:10 2018 -0500
+
+    Merge branch 'master' into request_response
+
+commit 69337b8b3f12f59e2637d33919416250348e09e8
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sun Mar 4 17:29:31 2018 -0800
+
+    added parse exceptions to FlightStore and getInstance method to itineraryStore
+
+commit 241b4419c95908fbd02547c9e72781590ebfdfa9
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Mar 4 20:29:17 2018 -0500
+
+    Change info to support edits from master
+
+commit b75487ac8a9abd3c8ef893511494bdffc533918a
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Mar 4 20:22:36 2018 -0500
+
+    Merge branch 'master' into request_response
+
+commit b2522d592b93478ecc80d69b62db3fdb3998d60a
+Merge: d663d8c 49cd1dc
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Mar 4 20:18:38 2018 -0500
+
+    Merge branch 'master' into request_response
+    
+    # Conflicts:
+    #       src/model/components/Flight.java
+    #       src/model/components/Itinerary.java
+    #       src/model/components/TripComponent.java
+
+commit 8ac738628b8a1aefef3ca9e2c2c55dfb124240fc
+Merge: c246431 49cd1dc
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sun Mar 4 17:16:24 2018 -0800
+
+    Merge remote-tracking branch 'origin/master'
+
+commit c24643103b4441d7b3d804c3ff6f48d5cf596976
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sun Mar 4 17:16:11 2018 -0800
+
+    mapped itinerary hash codes to itineraries
+
+commit d663d8c9349d8f8cd784d28d10de7d8c9985e209
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Mar 4 20:03:32 2018 -0500
+
+    Add trip component comparators
+
+commit 49cd1dc55d44eff107eafe47713a06c32ba293ce
+Author: meetpatel <msp2248@g.rit.edu>
+Date:   Sun Mar 4 20:01:08 2018 -0500
+
+    added get departure and arrival
+
+commit 3c38bee6ca909db1f8f2bc97e4bf5706d9abfd48
+Merge: 6b4e36c 561c7f5
+Author: meetpatel <msp2248@g.rit.edu>
+Date:   Sun Mar 4 19:58:15 2018 -0500
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       src/model/components/Flight.java
+    #       src/model/components/Itinerary.java
+
+commit 6b4e36c127d33d842654caa6a982a218806da872
+Author: meetpatel <msp2248@g.rit.edu>
+Date:   Sun Mar 4 19:57:57 2018 -0500
+
+    added get departure and arrival
+
+commit 561c7f59ef7b22c0810ac9d43e357ded0352a518
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sun Mar 4 16:56:03 2018 -0800
+
+    merged changes in itinerary together
+
+commit 726e7daa619342fef6d82937ea5dcaaa1294a726
+Merge: 5d68d55 0fb47bb
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sun Mar 4 16:53:56 2018 -0800
+
+    Merge remote-tracking branch 'origin/master'
+    
+    # Conflicts:
+    #       src/model/components/Flight.java
+    #       src/model/components/Itinerary.java
+
+commit 0bd4cee2423ab612d31841a8ac43d28c6b026bba
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Mar 4 19:43:18 2018 -0500
+
+    Implement Info command - not yet complete
+    
+    Missing TripComponent comparators and getItineraries call.
+
+commit 5d68d55ecd1eda8e69d10fc5c405ee6b9842e37e
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sun Mar 4 16:39:15 2018 -0800
+
+    Changed mapping on reservation store to <String,List<integer>> where the list holds itinerary hashcodes
+
+commit 0fb47bb24cd9f19ec472b1562ae8c1afc063248c
+Merge: 86bdaae 2ca9bcc
+Author: meetpatel <msp2248@g.rit.edu>
+Date:   Sun Mar 4 16:25:44 2018 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 39840ab253fe7d6d36cff378682b393eba10632d
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Mar 4 16:16:24 2018 -0500
+
+    Implement Delete command - blocked on ReservationStore
+    
+    Waiting for an edit to ReservationStore to take passenger name, origin, and destination in the delete() method.
+
+commit 86bdaae36a1cd04428104b479de43affbe7dcae4
+Author: meetpatel <msp2248@g.rit.edu>
+Date:   Sun Mar 4 16:07:49 2018 -0500
+
+    updated flights and airport methods
+
+commit b66a2605082479a40dae8a863d6951b5a8ab08c6
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Mar 4 15:20:09 2018 -0500
+
+    Fix some issues with request parsing
+
+commit 567cddd80372039a9223ea99c836930ab2adc775
+Merge: 93bbbac 797a6ff
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Mar 4 14:37:58 2018 -0500
+
+    Merge branch 'master' into request_response
+
+commit 2ca9bcc14904b9c2ddda44474c3929f2ef531ee7
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Sun Mar 4 14:36:56 2018 -0500
+
+    Moved the Scanner declaration from inside the loop to outside.
+
+commit 93bbbac0ae08a15736ecd114c493c172af33a497
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Mar 4 14:34:52 2018 -0500
+
+    Make client test to run PTUI
+    
+    Does not work correctly yet. Input line does not get outputted.
+
+commit 7080047278f0c0cfcd2b67d9baa8efc84b879483
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sun Mar 4 14:10:09 2018 -0500
+
+    Add basic tests for RequestHandler
+
+commit 797a6ffa8ba55f91b76538dbd95ab971784e0d69
+Author: meetpatel <msp2248@g.rit.edu>
+Date:   Sun Mar 4 14:07:56 2018 -0500
+
+    add, remove and get flights to itinerary
+
+commit 111cb18c2c598716a94b1bcf28a5bfe3bb1944de
+Author: meetpatel <msp2248@g.rit.edu>
+Date:   Sun Mar 4 14:07:19 2018 -0500
+
+    add, remove and get flights to itinerary
+
+commit ba79047d20574fd9d9a462d025065bc7b81f8c9e
+Author: Shawn Struble <shawnrstruble@gmail.com>
+Date:   Sun Mar 4 13:21:35 2018 -0500
+
+    Began algorithm work for generating itineraries.
+
+commit 17641f16e27bf6c61624c035cd9cc01390b39e3f
+Author: AdamVD <avdonle@outlook.com>
+Date:   Sun Mar 4 13:12:50 2018 -0500
+
+    Implement RequestHandler
+    
+    Also changed error throwing structure in regard to the reflection code within CommandFactory.
+    
+    RequestHandler not yet tested.
+
+commit 54647d4c023bc6e46379b4dd6d654b5504d1b2fa
+Author: AdamVD <avdonle@outlook.com>
+Date:   Sun Mar 4 12:04:09 2018 -0500
+
+    Implement Airport command and fix Airport.getWeather
+    
+    Implementation not yet tested.
+
+commit 4d9a0b3d0281fb3aa10364ce653680c95219f38f
+Merge: f3ce65b 12150dc
+Author: AdamVD <avdonle@outlook.com>
+Date:   Sun Mar 4 11:32:10 2018 -0500
+
+    Merge branch 'datastores' into request_response
+
+commit f3ce65ba1065e7e26ddb13d15295626fd656a1f9
+Author: AdamVD <avdonle@outlook.com>
+Date:   Sun Mar 4 11:31:33 2018 -0500
+
+    Add definitions to Command
+    
+    Also have partial functionality in Airport command. Need to pull over data branch for more functionality.
+
+commit 0f70224307120229023f9a689ea05d57fa768945
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Sun Mar 4 10:00:13 2018 -0500
+
+    Added method documentation for Client.run()
+
+commit 1b4764025401b0b29c514e1a4221f9f0b76e8080
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Sun Mar 4 09:58:10 2018 -0500
+
+    Client now passes input string to RequestHandler and outputs the returned string. Client subsystem is now feature complete.
+
+commit 12150dc0c28e48b1b45c389a1838267dbfd95d2a
+Author: Shawn Struble <shawnrstruble@gmail.com>
+Date:   Sun Mar 4 04:57:02 2018 -0500
+
+    wrote simple hash function for itinerary, changed method name
+
+commit 3401ee715cede35a31e1120b38750387493ab034
+Author: Shawn Struble <shawnrstruble@gmail.com>
+Date:   Sun Mar 4 03:45:43 2018 -0500
+
+    Debugged reading in airport information and flight information. Should be working as intended now.
+
+commit 7e865a3ecd615f041149b4bc2ae42197b9c9fa3a
+Author: Shawn Struble <shawnrstruble@gmail.com>
+Date:   Sun Mar 4 03:03:34 2018 -0500
+
+    Flightstore can read in flights from file now. Set up singleton instance for it.
+    Airport store can return airport based on airport code
+
+commit 985dd7f7311b27a6603769bda1baf2041cf8b718
+Author: Shawn Struble <shawnrstruble@gmail.com>
+Date:   Sat Mar 3 21:16:11 2018 -0500
+
+    moved a variable
+
+commit b5a86c3287c6b10b9b808287c52ae0f8e3b221ff
+Author: Shawn Struble <shawnrstruble@gmail.com>
+Date:   Sat Mar 3 21:13:11 2018 -0500
+
+    Added enum for return success/failure, delete function removes passenger from list if no itineraries codes associated with them, readReservations internally tested seems good, save function written, not tested
+
+commit 0445b0d77e96d077d67b84e6d59fb19d94c1f4c4
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sat Mar 3 13:36:02 2018 -0800
+
+    Changed mapping on reservation store to <String,List<integer>> where the list holds itinerary hashcodes
+
+commit 19606b2d6e7c14ae98e5a1fc0358f3e5ae6e375e
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Sat Mar 3 13:18:20 2018 -0800
+
+    All IO work done on airport store, not tested, also might need to change method slightly in case data files are changed
+
+commit c6665f81edf4b4d5419a24257fbd789f2af96984
+Merge: 2d96a94 06c2afc
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sat Mar 3 15:23:30 2018 -0500
+
+    Merge branch 'master' into request_response
+
+commit 06c2afc8b7df9abe2439fd096421b956cd27061c
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sat Mar 3 15:20:30 2018 -0500
+
+    Create skeleton of request handler
+
+commit 2d96a949634eced24100890e8243d2837b3461c7
+Author: AdamVD <avdonle@gmail.com>
+Date:   Sat Mar 3 15:06:31 2018 -0500
+
+    Remove unnecessary code
+
+commit 11ad7f4a6771a3288b9d911c9bbfd515bb272e42
+Author: Shawn Struble <shawnrstruble@gmail.com>
+Date:   Sat Mar 3 13:12:12 2018 -0500
+
+    more IO work done in AirportStore
+
+commit 87abd0cdb965ca10ee63f73229df9fd65d910b9d
+Merge: 13098b2 13aa05f
+Author: Shawn Struble <shawnrstruble@gmail.com>
+Date:   Sat Mar 3 02:17:27 2018 -0500
+
+    Merge branch 'datastores'
+
+commit 13098b2f37e2c239bd9192c5b4f97d0d03715265
+Author: Shawn Struble <shawnrstruble@gmail.com>
+Date:   Sat Mar 3 02:12:24 2018 -0500
+
+    added empty constructor, added setters
+
+commit 13aa05f4dad87f9ed5fae76dcdb5b2c273c38207
+Author: Shawn Struble <shawnrstruble@gmail.com>
+Date:   Sat Mar 3 02:05:49 2018 -0500
+
+    began reading in airport data in AirportStore, copied requirement description into FlightStore
+
+commit ff2cec19a6d18b6fcc91f02cf0fdd27b104b4da5
+Author: Shawn Struble <shawnrstruble@gmail.com>
+Date:   Sat Mar 3 01:18:56 2018 -0500
+
+    began filling out delete,reserve and retrieve methods
+
+commit 7ace29eac036d44229a080fbd0922eef5d74dfca
+Author: Shawn Struble <shawnrstruble@gmail.com>
+Date:   Fri Mar 2 22:01:25 2018 -0500
+
+    added data text files
+
+commit ebd82a5dce774fc66e09960ba6f59e95c79356a7
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Fri Mar 2 18:49:38 2018 -0800
+
+    created ItineraryStore skeleton
+
+commit 102e13d35213b350e405a98f5b80003bcccb05e7
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Fri Mar 2 18:26:50 2018 -0800
+
+    updated save method description
+
+commit 942edb1a0f037907088d58bf5aaf3be2a0634df4
+Author: meetpatel <msp2248@g.rit.edu>
+Date:   Fri Mar 2 20:56:18 2018 -0500
+
+    Finished model.components, no formal test cases written
+
+commit 425e883c48820b958c8676b7146032fded99c085
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Fri Mar 2 17:45:01 2018 -0800
+
+    added ReservationStore skeleton
+
+commit 5116757f33addad2478b90e337d0c04de8c52009
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Fri Mar 2 17:12:45 2018 -0800
+
+    changed method names for list generation
+
+commit 212c42d1c5788621d50ac40f28d79a346c535864
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Fri Mar 2 17:04:22 2018 -0800
+
+    Added Flightstore skeleton. Overloaded methods for singleton getInstance in both stores. Added throw exception to overloaded getInstance called before proper instantiation.
+
+commit e57641dadaf3bb0cb601e6d84ebdf53d2cc667bb
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Fri Mar 2 17:04:11 2018 -0800
+
+    Added Flightstore skeleton. Overloaded methods for singleton getInstance in both stores. Added throw exception to overloaded getInstance called before proper instantiation.
+
+commit 196844f9c57960be9328dd194db5ff4867d741f4
+Author: AdamVD <avdonle@outlook.com>
+Date:   Fri Mar 2 19:36:59 2018 -0500
+
+    Add non-existent command test
+
+commit dec89c2e24b176d0eefcbe0f8863807d1e59686d
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Fri Mar 2 16:23:40 2018 -0800
+
+    added AirportStore skeleton, with basic singleton properties
+
+commit a3f1691077960eccede023bf9fc357eade9f325b
+Author: AdamVD <avdonle@outlook.com>
+Date:   Fri Mar 2 19:21:57 2018 -0500
+
+    Make Command constructors public
+
+commit d6e1f1d4b6eadf1b9cd4b60e6e9663e350015f2b
+Author: AdamVD <avdonle@outlook.com>
+Date:   Fri Mar 2 19:06:57 2018 -0500
+
+    Add constructor to Commands
+
+commit 04839ae7bd1868f2040831640fd46c988f5ee28c
+Author: AdamVD <avdonle@outlook.com>
+Date:   Fri Mar 2 18:29:20 2018 -0500
+
+    Impement command factory and initial test
+    
+    Test does not yet complete successfully.
+
+commit 44106a75c4fc916a34ee20ce2f303b90a1c880b9
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Fri Mar 2 12:07:36 2018 -0500
+
+    Added start up and help screens to PTUI.
+
+commit df4d5244e84705d63328ff69e4f25be591da0bfc
+Author: meetpatel <msp2248@g.rit.edu>
+Date:   Fri Mar 2 09:35:07 2018 -0500
+
+    Created skeleton methods and fields for the model classes. Changed the field in Itinerary List<Flight> to List<TripComponent> to show composite being used.
+
+commit 5cc4b3b8b8a5df9244742288bce6cd45bab023b9
+Author: AdamVD <avdonle@outlook.com>
+Date:   Thu Mar 1 19:37:11 2018 -0500
+
+    Add class files and declarations model/components
+
+commit 5be6a59119fc4c34a260d77a688bc351e2806fe5
+Author: AdamVD <avdonle@outlook.com>
+Date:   Thu Mar 1 19:32:44 2018 -0500
+
+    Add class files and declarations
+    
+    Created files for all commands. Also created a new "commands" package for these command classes. Moved the `Command` interface into this new package.
+
+commit 76067ce9e380b3e292c45f1efe50d1c70810d2e2
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Thu Mar 1 16:04:12 2018 -0800
+
+    added skeleton classes for ReservationStore, FlightStore, AirportStore
+
+commit 02e780c7cedd399df59c666ee1b9ad406b5b87ba
+Author: AdamVD <avdonle@outlook.com>
+Date:   Thu Mar 1 18:35:55 2018 -0500
+
+    Add gitingore
+
+commit 021c6a339e946da032fb2f50a379b5a379fe5b2f
+Author: heartemoji <thomasamaral2016@gmail.com>
+Date:   Thu Mar 1 16:16:10 2018 -0500
+
+    Tier and subsystem directory skeleton with a few skeleton classes
+
+commit 26f99cf1e06c51b2d0a5ee6aac9ee1fc040eeb22
+Author: shawn <shawnrstruble@gmail.com>
+Date:   Wed Feb 28 18:22:05 2018 -0800
+
+    set up hierarchy
